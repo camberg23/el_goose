@@ -1,0 +1,6 @@
+[theme]
+# Use the dark base style
+base="dark"
+
+# Switch to a serif font
+font="serif"
