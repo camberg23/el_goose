@@ -246,21 +246,22 @@ def call_elgoose_api(method: str,
 #
 st.title("ElGoose.ai")
 
-st.markdown(
-    """
-    **Welcome to ElGoose.ai** (WIP: CB hacked together on the plane ride over to Gonzo). 
-    A conversational gateway to Goose’s entire ecosystem—shows, setlists, songs, venues, jam charts, appearances, albums, and more.
+with st.expander("**About this tool**"):
+    st.markdown(
+        """
+        **Welcome to ElGoose.ai** (WIP: CB hacked together on the plane ride over to Gonzo). 
+        A conversational gateway to Goose’s entire ecosystem—shows, setlists, songs, venues, jam charts, appearances, albums, and more.
 
-    **Ask questions like:**
-    - Which countries did Goose tour in 2023?
-    - When did Julian Lage appear with Goose?
-    - Show me the setlist from June 30, 2024 at Westville Music Bowl.
-    - List all albums and their tracklists.
-    - What are Goose's top 5 most-played tunes?
+        **Ask questions like:**
+        - Which countries did Goose tour in 2023?
+        - When did Julian Lage appear with Goose?
+        - Show me the setlist from June 30, 2024 at Westville Music Bowl.
+        - List all albums and their tracklists.
+        - What are Goose's top 5 most-played tunes?
 
-    Behind the scenes, we’re dynamically calling every ElGoose API endpoint so you get exactly the data you need—no clicking required. Just chat!
-    """
-)
+        Behind the scenes, we’re dynamically calling every ElGoose API endpoint so you get exactly the data you need—no clicking required. Just chat!
+        """
+    )
 
 # system message content
 system_content = (
