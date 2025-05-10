@@ -248,7 +248,7 @@ st.title("ElGoose.ai")
 
 st.markdown(
     """
-    **Welcome to the Goose Data Explorer** (WIP: hacked together on the plane ride over to Gonzo). 
+    **Welcome to ElGoose.ai** (WIP: CB hacked together on the plane ride over to Gonzo). 
     A conversational gateway to Goose’s entire ecosystem—shows, setlists, songs, venues, jam charts, appearances, albums, and more.
 
     **Ask questions like:**
@@ -256,7 +256,7 @@ st.markdown(
     - When did Julian Lage appear with Goose?
     - Show me the setlist from June 30, 2024 at Westville Music Bowl.
     - List all albums and their tracklists.
-    - What are the top 5 most-played tunes?
+    - What are Goose's top 5 most-played tunes?
 
     Behind the scenes, we’re dynamically calling every ElGoose API endpoint so you get exactly the data you need—no clicking required. Just chat!
     """
