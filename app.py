@@ -95,14 +95,14 @@ def call_elgoose_api(method: str,
     if method == "songs" and column in ("song", "songname", "name"):
         song_filter = quote_plus(value.strip())
         url = f"{eg_client.base_url}/setlists/songname/{song_filter}.json"
-        st.write("🔍 [DEBUG] COUNT URL:", url)
+        # st.write("🔍 [DEBUG] COUNT URL:", url)
         raw = eg_client.fetch(
             "setlists", None,
             "songname", song_filter,
             fmt, order_by="showdate",
             direction="asc", limit=10000
         )
-        st.write("🔍 [DEBUG] COUNT RAW PAYLOAD:", raw)
+        # st.write("🔍  [DEBUG] COUNT RAW PAYLOAD:", raw)
         plays = len(raw.get("data", []))
         return json.dumps({
             "data": {"song": value, "plays": plays},
